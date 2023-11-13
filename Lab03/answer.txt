@@ -1,0 +1,12 @@
+Java được coi là một ngôn ngữ lập trình "pass-by-value". Khi ta truyền 
+một biến vào một phương thức trong Java, thực tế ta đang truyền giá trị
+của biến đó, không phải là tham chiếu đến biến. Tuy nhiên, điều quan 
+trọng là hiểu rằng khi ta truyền một tham số của một đối tượng (object) 
+vào một phương thức, ta đang truyền giá trị của tham chiếu đến đối tượng
+đó, không phải giá trị thực sự của đối tượng.
+
+Vì vậy, khi ta thay đổi trạng thái của đối tượng được truyền làm tham số 
+trong phương thức, sự thay đổi sẽ ảnh hưởng đến đối tượng gốc mà tham 
+chiếu đó trỏ tới. Tuy nhiên, nếu ta cố gắng thay đổi giá trị của tham số
+(đối với kiểu dữ liệu nguyên thủy như int, float, ...) trong phương thức,
+thì sự thay đổi sẽ không ảnh hưởng đến biến gốc.
