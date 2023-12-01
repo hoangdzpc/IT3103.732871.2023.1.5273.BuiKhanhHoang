@@ -1,0 +1,10 @@
+package hust.soict.dsai.aims.media;
+
+public class Media {
+
+	public Object getCategory() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}
