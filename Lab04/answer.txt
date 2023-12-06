@@ -1,0 +1,22 @@
+1. Lớp nào nên triển khai Comparable interface?
+   - Lớp Media nên triển khai Comparable interface.
+
+2. Làm thế nào để triển khai phương thức compareTo() trong các lớp đó để phản ánh thứ tự mong muốn?
+   - Trong lớp Media, ta nên ghi đè phương thức compareTo() để xác định thứ tự tự nhiên của đối tượng. 
+Phương thức này nên trả về một số nguyên âm, không hoặc số nguyên dương nếu đối tượng hiện tại nhỏ hơn,
+bằng hoặc lớn hơn đối tượng chỉ định, tương ứng.
+
+3. Có thể có hai quy tắc sắp xếp khác nhau của item (theo tiêu đề sau đó là giá và ngược lại) nếu sử 
+dụng phương thức Comparable không?
+   - Không, sắp xếp tự nhiên được định nghĩa bởi phương thức compareTo() là duy nhất. ta không thể có
+hai quy tắc sắp xếp khác nhau trong cùng một Comparable interface.
+
+4. Giả sử DVDs có một quy tắc sắp xếp khác nhau (theo tiêu đề, sau đó là độ dài giảm dần, sau đó là giá).
+Làm thế nào để ta sửa đổi mã của mình để cho phép điều này?
+   - Nếu DVDs có một quy tắc sắp xếp khác nhau, ta có thể xem xét việc tạo một lớp riêng cho DVDs triển 
+khai Comparable với phương thức compareTo() riêng. Sau đó, ta có thể sử dụng các so sánh khác nhau khi 
+cần thiết. Nếu DVDs và các loại phương tiện khác có các thuộc tính chung, ta có thể xem xét việc tạo một
+giao diện hoặc lớp trừu tượng chung và làm cho cả Media và DVD triển khai hoặc mở rộng nó.
+
+- Sau đó, khi sắp xếp một bộ sưu tập chứa nhiều loại phương tiện, ta sẽ sử dụng logic sắp xếp riêng biệt 
+cho DVDs và các loại phương tiện khác.
