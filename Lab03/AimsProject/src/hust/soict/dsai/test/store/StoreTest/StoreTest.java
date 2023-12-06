@@ -1,7 +1,8 @@
 //Bui Khanh Hoang 20215273
 package hust.soict.dsai.test.store.StoreTest;
 
-import hust.soict.dsai.aims.disc.DigitalVideoDisc.DigitalVideoDisc;
+
+import hust.soict.dsai.aims.media.DigitalVideoDisc;
 import hust.soict.dsai.aims.store.Store.Store;
 
 public class StoreTest {
@@ -12,8 +13,8 @@ public class StoreTest {
                 "Gerge Lucas", 87, 24.95f);
         DigitalVideoDisc dvd3 = new DigitalVideoDisc("Aladin", "Animation", 18.89f);
         Store store = new Store();
-        store.addDVD(dvd1);
-        store.addDVD(dvd2);
-        store.addDVD(dvd3);
+        store.addMedia(dvd1);
+        store.addMedia(dvd2);
+        store.addMedia(dvd3);
 	}
 }
